@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import API from "../api";
+import API, { BASE_URL } from "../api";
 import { Link } from "react-router-dom";
 import "./Shop.css";
 
@@ -63,7 +63,7 @@ function Shop() {
               <Link key={product._id} to={`/product/${product._id}`} className="product-card">
                 <div className="product-img-wrapper">
                   <img
-                    src={`https://shopping-website-ol23.onrender.com/uploads/${product.image}`}
+                    src={`${BASE_URL}/uploads/${product.image}`}
                     alt={product.name}
                     className="product-img"
                     loading="lazy"

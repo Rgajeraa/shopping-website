@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import API from "../api";
+import API, { BASE_URL } from "../api";
 import { CartContext } from "../context/CartContext";
 import "./ProductDetails.css";
 
@@ -59,7 +59,7 @@ function ProductDetails() {
       <div className="pd-card">
         <div className="pd-image-container">
           <img
-             src={`https://shopping-website-ol23.onrender.com/uploads/${product.image}`}
+             src={`${BASE_URL}/uploads/${product.image}`}
              alt={product.name}
              className="pd-image"
           />

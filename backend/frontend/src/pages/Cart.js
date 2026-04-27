@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import { BASE_URL } from "../api";
 import "./Cart.css";
 
 function Cart() {
@@ -29,7 +30,7 @@ function Cart() {
           {cart.map((item) => (
             <div key={item.product._id} className="cart-item">
               <img
-                src={`https://shopping-website-ol23.onrender.com/uploads/${item.product.image}`}
+                src={`${BASE_URL}/uploads/${item.product.image}`}
                 alt={item.product.name}
                 className="cart-item-img"
               />

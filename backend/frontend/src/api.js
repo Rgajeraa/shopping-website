@@ -1,7 +1,9 @@
 import axios from "axios";
 
+export const BASE_URL = "http://localhost:5000";
+
 const API = axios.create({
-  baseURL: "https://shopping-website-ol23.onrender.com/api",
+  baseURL: `${BASE_URL}/api`,
   timeout: 10000, 
 });
 
