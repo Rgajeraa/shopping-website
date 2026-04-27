@@ -172,7 +172,29 @@
 }
 
 @media (max-width: 768px) {
+  .pd-page {
+    padding: 2rem 1rem;
+  }
   .pd-card {
     flex-direction: column;
+  }
+  .pd-image-container, .pd-info {
+    padding: 1.5rem;
+  }
+  .pd-name {
+    font-size: 1.8rem;
+  }
+  .pd-price {
+    font-size: 1.6rem;
+  }
+  .pd-action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .pd-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
   }
 }

@@ -82,3 +82,21 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}

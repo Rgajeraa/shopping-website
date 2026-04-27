@@ -162,3 +162,33 @@
   text-align: center;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 2rem 1rem;
+  }
+  .shop-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-input {
+    max-width: 100%;
+  }
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+  .product-img-wrapper {
+    height: 180px;
+  }
+  .product-info {
+    padding: 1rem;
+  }
+  .product-price {
+    font-size: 1.2rem;
+  }
+  .view-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

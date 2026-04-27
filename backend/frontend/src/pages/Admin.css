@@ -247,6 +247,14 @@
     width: 100%;
   }
 
+  .admin-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .admin-page-container {
+    padding: 1.5rem;
+  }
+
   .admin-form-grid {
     grid-template-columns: 1fr;
   }
@@ -255,5 +263,17 @@
   .file-input,
   .admin-actions-row {
     grid-column: span 1;
+  }
+
+  .admin-page-title {
+    font-size: 1.5rem;
+  }
+
+  .admin-actions-row {
+    flex-direction: column;
+  }
+
+  .action-btns {
+    flex-direction: column;
   }
 }

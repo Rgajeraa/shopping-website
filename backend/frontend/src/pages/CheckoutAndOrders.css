@@ -274,3 +274,26 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .checkout-page, .orders-page {
+    padding: 2rem 1rem;
+  }
+  .checkout-form {
+    padding: 1.5rem;
+  }
+  .checkout-title, .orders-title {
+    font-size: 1.8rem;
+  }
+  .checkout-summary {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .order-card {
+    padding: 1.5rem;
+  }
+  .gateway-modal {
+    padding: 1.5rem;
+  }
+}

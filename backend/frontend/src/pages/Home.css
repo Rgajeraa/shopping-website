@@ -122,10 +122,36 @@
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    padding: 2rem 1rem;
+  }
+  .home-title {
+    font-size: 2.2rem;
+  }
   .hero-banner {
     flex-direction: column;
   }
+  .hero-content {
+    padding: 2rem;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
   .stats-container {
     gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+  .hero-content h2 {
+    font-size: 1.5rem;
   }
 }
