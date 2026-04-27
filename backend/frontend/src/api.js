@@ -1,10 +1,10 @@
 import axios from "axios";
 
-export const BASE_URL = "https://shopping-website-ol23.onrender.com";
+export const BASE_URL = "https://shopping-website-ol23.onrender.com/api";
 
 const API = axios.create({
   baseURL: `${BASE_URL}/api`,
-  timeout: 10000, 
+  timeout: 10000,
 });
 
 API.interceptors.request.use((config) => {
