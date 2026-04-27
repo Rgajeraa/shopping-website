@@ -13,7 +13,7 @@ function Shop() {
     const fetchProducts = async () => {
       try {
         const res = await API.get("/products");
-        console.log("PRODUCT DATA:",res.data);
+        console.log("PRODUCT DATA:", res.data);
         setProducts(res.data || []);
         setError(null);
       } catch (err) {
@@ -63,7 +63,7 @@ function Shop() {
               <Link key={product._id} to={`/product/${product._id}`} className="product-card">
                 <div className="product-img-wrapper">
                   <img
-                    src={`${BASE_URL}/uploads/${product.image}`}
+                    src={`https://shopping-website-ol23.onrender.com/uploads/${product.image}`}
                     alt={product.name}
                     className="product-img"
                     loading="lazy"
