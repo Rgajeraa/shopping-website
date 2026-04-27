@@ -13,7 +13,7 @@ function Shop() {
     const fetchProducts = async () => {
       try {
         const res = await API.get("/products");
-        consol.log("PRODUCT DATA:",res.data);
+        console.log("PRODUCT DATA:",res.data);
         setProducts(res.data || []);
         setError(null);
       } catch (err) {
