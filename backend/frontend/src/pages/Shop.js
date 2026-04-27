@@ -62,7 +62,7 @@ function Shop() {
               <Link key={product._id} to={`/product/${product._id}`} className="product-card">
                 <div className="product-img-wrapper">
                   <img
-                    src={`http://localhost:5000/uploads/${product.image}`}
+                    src={`https://shopping-website-ol23.onrender.com/uploads/${product.image}`}
                     alt={product.name}
                     className="product-img"
                     loading="lazy"

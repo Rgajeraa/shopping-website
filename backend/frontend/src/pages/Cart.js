@@ -29,7 +29,7 @@ function Cart() {
           {cart.map((item) => (
             <div key={item.product._id} className="cart-item">
               <img
-                src={`http://localhost:5000/uploads/${item.product.image}`}
+                src={`https://shopping-website-ol23.onrender.com/uploads/${item.product.image}`}
                 alt={item.product.name}
                 className="cart-item-img"
               />

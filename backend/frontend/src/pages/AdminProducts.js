@@ -114,7 +114,7 @@ function AdminProducts() {
             {products.map((p) => (
               <tr key={p._id}>
                 <td>
-                  <img src={`http://localhost:5000/uploads/${p.image}`} alt={p.name} className="product-thumb" />
+                  <img src={`https://shopping-website-ol23.onrender.com/uploads/${p.image}`} alt={p.name} className="product-thumb" />
                 </td>
                 <td style={{fontWeight: 600}}>{p.name}</td>
                 <td style={{fontWeight: 700, color: 'var(--primary)'}}>₹{p.price}</td>

@@ -59,7 +59,7 @@ function ProductDetails() {
       <div className="pd-card">
         <div className="pd-image-container">
           <img
-             src={`http://localhost:5000/uploads/${product.image}`}
+             src={`https://shopping-website-ol23.onrender.com/uploads/${product.image}`}
              alt={product.name}
              className="pd-image"
           />

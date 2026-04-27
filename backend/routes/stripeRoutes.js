@@ -28,7 +28,7 @@ router.post("/create-checkout-session", protect, async (req, res) => {
     }));
 
     // Create Stripe Checkout Session
-    const origin = req.headers.origin || "http://localhost:3000";
+    const origin = req.headers.origin || "https://shopping-website-ol23.onrender.com";
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items,
