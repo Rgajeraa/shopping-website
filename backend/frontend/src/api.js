@@ -1,11 +1,12 @@
 import axios from "axios";
 
-export const BASE_URL = "https://shopping-website-ol23.onrender.com/api";
+export const BASE_URL = "https://shopping-website-ol23.onrender.com";
 
 const API = axios.create({
   baseURL: `${BASE_URL}/api`,
   timeout: 10000,
 });
+export default API;
 
 API.interceptors.request.use((config) => {
   const userInfo = localStorage.getItem("userInfo");
