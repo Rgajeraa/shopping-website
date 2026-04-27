@@ -6,7 +6,6 @@ const API = axios.create({
   baseURL: `${BASE_URL}/api`,
   timeout: 10000,
 });
-export default API;
 
 API.interceptors.request.use((config) => {
   const userInfo = localStorage.getItem("userInfo");
