@@ -21,7 +21,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/ecommerce", {
+  .connect(process.env.MONGODB_URI, {
     serverSelectionTimeoutMS: 5000,
     connectTimeoutMS: 10000,
     socketTimeoutMS: 45000,
