@@ -75,9 +75,7 @@ function Checkout() {
     }
   };
 
-  // If redirecting from success but cart was empty, we shouldn't block rendering or we might miss the useEffect.
-  // The useEffect runs anyway, but it's better to show a processing message or something.
-  const query = new URLSearchParams(location.search);
+  
 
   if (cart.length === 0) {
     return (
