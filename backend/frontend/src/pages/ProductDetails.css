@@ -1,0 +1,178 @@
+/* ProductDetails.css */
+.pd-page {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.pd-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  overflow: hidden;
+}
+
+.pd-image-container {
+  flex: 1;
+  padding: 3rem;
+  background: linear-gradient(135deg, #ffffff, #e84880cf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border);
+}
+
+.pd-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+
+  transition: transform 0.4s;
+}
+
+.pd-image:hover {
+  transform: scale(1.05);
+}
+
+.pd-info {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.pd-price-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pd-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.pd-stock-badge {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid #a7f3d0;
+}
+
+.pd-desc {
+  color: var(--text-gray);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.pd-features {
+  background: linear-gradient(135deg, #ffffff, #f6a4c1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  border: 1px solid #f8a9c8;
+}
+
+.pd-feature {
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.pd-feature span {
+  color: var(--primary);
+  margin-right: 0.8rem;
+  font-weight: bold;
+}
+
+.pd-action-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.pd-action-row label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.pd-qty-select {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--white);
+}
+
+.pd-add-btn {
+  flex: 1;
+  background: var(--primary);
+  color: var(--white);
+  padding: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(139, 94, 60, 0.3);
+}
+
+.pd-add-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(139, 94, 60, 0.4);
+}
+
+.pd-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .pd-card {
+    flex-direction: column;
+  }
+}
